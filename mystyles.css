@@ -1,0 +1,27 @@
+.owl-carousel.std {
+  margin-top: 5%;
+}
+
+.owl-prev {
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-next {
+  left: auto;
+  right: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dateBox {
+  width: 100px;
+  height: 150px;
+  background-color: red;
+  border: 1px solid #eee;
+  margin-top: -50px;
+  color: black;
+}
