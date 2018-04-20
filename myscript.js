@@ -10,4 +10,11 @@ $(document).ready(function() {
     dots: true
   });
 });
+
+
+console.log('toggle');
 });
+
+/*function flip() {
+    $('.card').toggleClass('flipped');
+}*/
