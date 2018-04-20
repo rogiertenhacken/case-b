@@ -1,3 +1,7 @@
+body {
+  margin: 10px;
+}
+
 .st-title-header {
   box-sizing: border-box;
   font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
@@ -8,7 +12,6 @@
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 10px;
-  line-height: ;
 }
 .st-title-header span {
   color: #0082c3;
@@ -22,21 +25,22 @@
   margin-bottom: 10px;
 }
 
-.owl-prev {
+.owl-theme.owl-prev {
   left: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 999;
 }
 
-.owl-next {
+.owl-theme.owl-next {
   left: auto;
   right: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-
+*/
 .dateBox {
   width: 100px;
   height: 150px;
@@ -47,17 +51,17 @@
   color: black;
 }
 
-
-
 /*/////////////// turn cards css ///////////////*/
 
-/* keeps perspective */
+/* keeps perspective
 .turn-container {
 	perspective: 1000px;
 }
+*/
+
 	/* turn on hover */
-	.turn-container:hover .turner, .turn-container.hover .turner {
-		transform: rotateY(180deg);
+.turn-container:hover .turner, .turn-container.hover .turner {
+	transform: rotateY(180deg);
 	}
 
 .turn-container, .front, .back {
@@ -67,7 +71,7 @@
   color: black;
   /*line-height: 110px;*/
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 /* turn speed */
@@ -116,4 +120,22 @@
   /* for firefox 31 */
   transform: rotateY(180deg);
 }
+
+  /*remove two cards to have equal fit*/
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .hide{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width: 370px) {
+.st-title-header{
+  font-size: 21px;
+  }
+}
+
+@media only screen and (min-width:371px) and (max-width: 400px) {
+.st-title-header{
+  font-size: 28px;
+  }
 }
