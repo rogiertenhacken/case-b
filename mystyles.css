@@ -13,34 +13,51 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .st-title-header span {
   color: #0082c3;
+}
+
+.owl-carousel.std {
+  margin-bottom: 20px;
 }
 
 .dateName span {
   font-size: 28px;
 }
 
-.owl-carousel.std {
-  margin-bottom: 10px;
-}
-
-.owl-theme.owl-prev {
-  left: 20px;
+.owl-prev {
+  left: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 999;
+  -webkit-transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8)!important;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  color: #000 !important;
+
 }
 
-.owl-theme.owl-next {
+.owl-next {
   left: auto;
-  right: 20px;
+  right: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8)!important;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  color: #000 !important;
 }
-*/
+
+
+/*/////////////// turn cards css ///////////////*/
+
+
 .dateBox {
   width: 100px;
   height: 150px;
@@ -51,25 +68,17 @@ body {
   color: black;
 }
 
-/*/////////////// turn cards css ///////////////*/
-
-/* keeps perspective
-.turn-container {
-	perspective: 1000px;
-}
-*/
-
-	/* turn on hover */
+/* turn on hover */
 .turn-container:hover .turner, .turn-container.hover .turner {
 	transform: rotateY(180deg);
-	}
+  -webkit-transform: rotateY(180deg);
+}
 
 .turn-container, .front, .back {
   width: 90px;
   height: 120px;
   background-color: #ffffff;
   color: black;
-  /*line-height: 110px;*/
   margin: 0 auto;
   margin-bottom: 3px;
 }
@@ -77,19 +86,22 @@ body {
 /* turn speed */
 .turner {
 	transition: 0.9s;
+  -webkit-transition: 0.9s;
 	transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 	position: relative;
 }
 
 /* hide back during turnover */
 .front, .back {
 	backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-/* front*/
+/* front */
 .front {
   border: 1px solid #eee;
   text-align: center;
@@ -101,11 +113,11 @@ body {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-	/* for firefox 31 */
 	transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
-/* back*/
+/* back */
 .back {
   border: 1px solid #eee;
   text-align: center;
@@ -117,25 +129,26 @@ body {
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  /* for firefox 31 */
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-backface-visibility: visible; /*for visibilty in Firefox*/
 }
 
-  /*remove two cards to have equal fit*/
+/*remove two cards to have good fit*/
 @media only screen and (min-width: 990px) and (max-width: 1200px) {
-  .hide{
+  .hide {
     display: none;
   }
 }
 
 @media only screen and (min-width:300px) and (max-width: 370px) {
-.st-title-header{
+.st-title-header {
   font-size: 21px;
   }
 }
 
 @media only screen and (min-width:371px) and (max-width: 400px) {
-.st-title-header{
+.st-title-header {
   font-size: 28px;
   }
 }
