@@ -59,7 +59,7 @@ body {
 
 
 /* turn on hover */
-.turn-container:hover .turner, .turn-container.hover .turner {
+.turn-container:hover .turner, .turn-container.hover {
 	transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
@@ -76,7 +76,7 @@ body {
 .turner {
 	transition: 0.9s;
   -webkit-transition: 0.9s;
-	transform-style: preserve-3d;
+  transform-style: preserve-3d; /*flips the text on the back from l-r*/
   -webkit-transform-style: preserve-3d;
 	position: relative;
 }
