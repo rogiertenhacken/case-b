@@ -59,7 +59,7 @@ body {
 
 
 /* turn on hover */
-.turn-container:hover .turner, .turn-container.hover {
+.turn-container:hover .turner {
 	transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
